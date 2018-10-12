@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap 4 Cheatsheet</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+
+    <style>
+        .btn {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -81,7 +87,7 @@
         <h2>Media Object</h2>
         <div class="card">
             <div class="media">
-                <img class="mr-3" src="..." alt="Placeholder Image">
+                <img class="mr-3" src="media.svg" alt="Generic placeholder image">
                 <div class="media-body">
                     <h5 class="mt-0">Media heading</h5>
                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
@@ -232,7 +238,327 @@
         <br>
         <hr>
 
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Badges</h2>
+                <span class="badge badge-primary">Primary</span>
+                <span class="badge badge-secondary">Secondary</span>
+                <span class="badge badge-success">Success</span>
+                <span class="badge badge-danger">Danger</span>
+                <span class="badge badge-warning">Warning</span>
+                <span class="badge badge-info">Info</span>
+                <span class="badge badge-light">Light</span>
+                <span class="badge badge-dark">Dark</span>
+                <br>
+                <span class="badge badge-pill badge-primary">Primary</span>
+                <span class="badge badge-pill badge-secondary">Secondary</span>
+                <span class="badge badge-pill badge-success">Success</span>
+                <span class="badge badge-pill badge-danger">Danger</span>
+                <span class="badge badge-pill badge-warning">Warning</span>
+                <span class="badge badge-pill badge-info">Info</span>
+                <span class="badge badge-pill badge-light">Light</span>
+                <span class="badge badge-pill badge-dark">Dark</span>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+
+        <br>
+
+        <h2>Buttons</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Default</h5>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+            <div class="col-md-4">
+                <h5>Outline</h5>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            <div class="col-md-4">
+                <h5>Sizes</h5>
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+            </div>
+        </div>
+
+        <br>
+
+        <h2>Button Groups</h2>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary">1</button>
+                        <button type="button" class="btn btn-secondary">2</button>
+                        <button type="button" class="btn btn-secondary">3</button>
+                        <button type="button" class="btn btn-secondary">4</button>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text" id="btnGroupAddon">@</div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example"
+                            aria-describedby="btnGroupAddon">
+                    </div>
+                </div>
+            </div>
+        </div>
         
+        <br>
+
+        <h2>Cards</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Default</h5>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="image.svg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Card content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Headers and Footers</h5>
+                <div class="card text-center">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+        <br>
+
+        <h2>List Groups</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Default</h5>
+                <ul class="list-group">
+                    <li class="list-group-item active">Lorem ipsum</li>
+                    <li class="list-group-item active">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Flush</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Lorem ipsum</li>
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Custom Content</h5>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h2>Input Groups</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                </div>
+
+                <label for="basic-url">Your vanity URL</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">With textarea</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">Upload</span>
+                            </div>
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="inputGroupFile01">
+                              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            </div>
+                          </div>
+                          
+                          <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="inputGroupFile02">
+                              <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                              <span class="input-group-text" id="">Upload</span>
+                            </div>
+                          </div>
+                          
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <button class="btn btn-outline-secondary" type="button">Button</button>
+                            </div>
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="inputGroupFile03">
+                              <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                            </div>
+                          </div>
+                          
+                          <div class="input-group">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="inputGroupFile04">
+                              <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary" type="button">Button</button>
+                            </div>
+                          </div>
+            </div>
+        </div>
 
     </div>
 </body>
